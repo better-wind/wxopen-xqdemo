@@ -1,6 +1,13 @@
 # wxopen-xqdemo
 wxopen
 
+##Demo功能
+
+ * 想去首页
+ * 我的设置
+ * 活动页面
+ * 商品详情
+
 ##Demo运行
 
  * 创建项目

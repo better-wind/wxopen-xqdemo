@@ -2,28 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3ffe035-36a3-4a25-9207-6bd883618fd0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/iconfont-index-active.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/iconfont-index.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/iconfont-user-active.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/iconfont-user.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/activity/activity.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/activity/activity.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/activity/activity.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/data.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/index/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/index/index.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/index/index.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/product/product.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/product/product.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/product/product.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/setting/setting.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/setting/setting.wxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/setting/setting.wxss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/util.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="wxopen-xqdemo.iws" />
@@ -48,8 +26,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4208633">
-              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.37410071">
+              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -222,8 +200,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4208633">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.37410071">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
           <folding />
         </state>
       </provider>
