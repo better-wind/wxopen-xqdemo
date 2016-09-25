@@ -1,0 +1,29 @@
+/**index.wxss**/
+.text-view text{
+  padding: 0 5px;
+}
+.timelimit .tag-view{
+  width: 100%;
+}
+.timelimit .tag-view span{
+  display: inline-block;
+  margin:0 6px;
+  width: 8px;
+  height: 8px;
+  vertical-align: baseline;
+  transform: rotate(45deg);
+  background-color: rgb(0,0,0);
+}
+.timelimit .limit-item{
+  position: relative;
+  height: 180px;
+  margin:10px 0 0 0;
+}
+.timelimit .limit-item .image-view{
+  height: 150px;
+  background-color: rgb(220,220,220);
+}
+.timelimit .limit-item .msg-view text{
+  display:block;
+  line-height: 15px;
+}

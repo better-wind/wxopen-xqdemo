@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/activity/activity",
+    "pages/setting/setting",
+    "pages/product/product"
+  ],
+  "window":{
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "xiangqu",
+    "navigationBarBackgroundColor": "#fbf9fe",
+    "backgroundColor": "#fbf9fe",
+    "enablePullDownRefresh": "true"
+  },
+  "tabBar": {
+    "color": "#4b4b4b",
+    "selectedColor": "#d7a51e",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "image/iconfont-index.png",
+      "selectedIconPath": "image/iconfont-index-active.png",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/setting/setting",
+      "iconPath": "image/iconfont-user.png",
+      "selectedIconPath": "image/iconfont-user-active.png",
+      "text": "我的"
+    }]
+  }
+}

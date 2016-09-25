@@ -1,0 +1,86 @@
+<view class="page">
+    <view class="section">
+        <view>
+            <swiper class="product-banner" indicator-dots="{{productItem.bannerList.config.indicatorDots}}"
+                    autoplay="{{productItem.bannerList.config.autoplay}}"
+                    interval="{{productItem.bannerList.config.interval}}"
+                    duration="{{productItem.bannerList.config.duration}}">
+                <block wx:for="{{productItem.bannerList.items}}">
+                    <swiper-item class="center-image-view">
+                        <image src="{{item.src}}" mode="{{item.mode}}"></image>
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+        <view>
+            <view class="left-textrows-msg-view">
+                <text>{{productItem.productMsg.title}}</text>
+            </view>
+            <view class="flex-wrap product-title-favor">
+                <view>
+                    {{productItem.productMsg.price}}
+                </view>
+                <view bindtap="tapFavor">
+                    <span class="{{productItem.productMsg.favor ? 'favor' : 'notfavor'}}"></span>
+                    {{productItem.productMsg.favorNum}}
+                </view>
+
+            </view>
+            <view class="product-server">
+                <block wx:for="{{productItem.productMsg.serverList}}">
+                    <text>{{item}}</text>
+                </block>
+            </view>
+        </view>
+    </view>
+    <view class="section">
+        <view class="brand-image">
+            <image src="{{productItem.productMsg.brandImage}}" mode="aspectFit" />
+            {{productItem.productMsg.brandName}}
+        </view>
+        <view class="brand-detail">
+            <text>
+                {{productItem.productMsg.brandDetail}}
+            </text>
+
+        </view>
+    </view>
+    <view class="section" wx:if="{{productItem.productMsg.shopNotices}}">
+        <view>店铺公告</view>
+        <view><text>{{productItem.productMsg.shopNotices}}</text></view>
+    </view>
+    <view class="section">
+        <view class="detail-title">商品描述</view>
+        <block wx:for="{{productItem.productDetail}}">
+            <view wx:if="{{item.type == 'text'}}">
+                <text>{{item.text}}</text>
+            </view>
+            <view wx:if="{{item.type == 'image'}}" class="center-image-view detail-image">
+                <image src="{{item.src}}" mode = "aspectFit" />
+            </view>
+        </block>
+    </view>
+    <view class="fix-wrap menu-view">
+        <button type="default" bindtap="tapSku">加入购物车</button>
+        <button type="primary" bindtap="tapSku">立即购买</button>
+    </view>
+    <block wx:if="{{productItem.skuList.config.isShow}}">
+        <view class="fix-wrap hide-view"></view>
+        <view class="fix-wrap sku-view">
+            <view class="sku-item">
+                <block wx:for="{{productItem.skuList.items}}">
+                    <span class="{{item.select ? 'select' : ''}}" data-type="{{item.type}}" data-id="{{item.id}}" bindtap="tapSelect">{{item.sku}}</span>
+                </block>
+            </view>
+            <block wx:for="{{productItem.skuList.items}}">
+                <view wx:if="{{item.select}}" class="sku-item">
+                    <block wx:for="{{item.items}}">
+                        <span class="{{item.select ? 'select' : ''}}" data-type="{{item.type}}" data-id="{{item.id}}" bindtap="tapSelect">{{item.sku}}</span>
+                    </block>
+                </view>
+            </block>
+            <button type="primary" bindtap="tapSku">确认</button>
+        </view>
+    </block>
+
+</view>

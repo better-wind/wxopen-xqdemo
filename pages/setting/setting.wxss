@@ -1,0 +1,21 @@
+.user-info{
+  padding: 20px 0;
+}
+.user-info-image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,.5);
+}
+.setting-view{
+  width: 700rpx;
+  border:1rpx solid #AAA;
+  border-radius: 10rpx;
+}
+.setting-view .setting-item{
+  width: 680rpx;
+  border-bottom:1rpx solid #eee;
+  font-size: 14px;
+  line-height: 36px;
+}

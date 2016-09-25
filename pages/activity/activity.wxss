@@ -1,0 +1,23 @@
+.product{
+  width: 700rpx;
+}
+.product .tag-item{
+  margin:20px 0 0 0;
+  line-height: 50px;
+  font-size: 20px;
+  color:rgb(255,255,255);
+  background-color: rgb(0,0,0);
+}
+.product-item{
+  margin:20px 0 0 0;
+  box-sizing: border-box;
+  border:1rpx solid rgb(220,220,220);
+  border-radius: 6rpx;
+}
+.product-item-image{
+  height: 100px;
+  background-color: rgb(220,220,220);
+}
+.product-item-msg{
+  line-height: 50px;
+}

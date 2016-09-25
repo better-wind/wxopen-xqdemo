@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pages/activity/activity.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pages/product/product.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pages/product/product.wxml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pages/setting/setting.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pages/setting/setting.wxml" charset="UTF-8" />
+  </component>
+</project>

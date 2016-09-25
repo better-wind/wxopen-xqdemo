@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<view class="page" >
+  <view class="section banner">
+    <view>
+      <swiper indicator-dots="{{bannerList.config.indicatorDots}}"
+              autoplay="{{bannerList.config.autoplay}}"
+              interval="{{bannerList.config.interval}}"
+              duration="{{bannerList.config.duration}}"
+              bindchange="swiperChange">
+        <block wx:for="{{bannerList.items}}">
+          <swiper-item class="center-image-view">
+            <navigator url="../activity/activity" class="widget">
+              <image src="{{item.src}}" mode="{{item.mode}}" bindload="imageLoad"/>
+            </navigator>
+          </swiper-item>
+        </block>
+
+      </swiper>
+    </view>
+    <view class="text-view center-text-view">
+      <block wx:for="{{bannerList.texts}}">
+        <text>{{item}}</text>
+      </block>
+    </view>
+  </view>
+  <view class="section timelimit flex-wrap">
+    <view class="tag-view center-text-view">
+      <span></span>
+      <text>{{limitList.tag}}</text>
+      <span></span>
+    </view>
+    <block wx:for="{{limitList.items}}">
+      <view class="limit-item {{item.size ? 'list-one' : 'list-two'}}" >
+        <navigator url="../{{item.link}}/{{item.link}}">
+          <view class="image-view center-image-view">
+            <image src="{{item.src}}" mode="{{item.mode}}" />
+          </view>
+        </navigator>
+        <view class="msg-view">
+          <text class="center-text-view">{{item.price}}</text>
+          <text class="center-text-view">{{item.name}}</text>
+        </view>
+      </view>
+    </block>
+
+  </view>
+</view>

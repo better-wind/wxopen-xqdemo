@@ -1,0 +1,37 @@
+<view class="page">
+    <view class="section banner ">
+        <view>
+            <swiper indicator-dots="{{bannerList.config.indicatorDots}}"
+                    autoplay="{{bannerList.config.autoplay}}"
+                    interval="{{bannerList.config.interval}}"
+                    duration="{{bannerList.config.duration}}">
+                <block wx:for="{{bannerList.items}}">
+                    <swiper-item class="center-image-view">
+                        <image src="{{item.src}}" mode="{{item.mode}}"/>
+                    </swiper-item>
+                </block>
+
+            </swiper>
+        </view>
+    </view>
+    <view class="product section">
+        <block wx:for="{{productList}}">
+            <view class="center-text-view tag-item">{{item.tag}}</view>
+            <view class="flex-wrap">
+                <block wx:for="{{item.items}}">
+                    <view class="list-two product-item">
+                        <navigator url="../product/product">
+                            <view class="center-image-view product-item-image">
+                                <image src="{{item.src}}" mode="{{item.mode}}" />
+                            </view>
+                            <view class="center-text-view product-item-msg">
+                                <text>{{item.name}} {{item.price}}</text>
+                            </view>
+                        </navigator>
+                    </view>
+                </block>
+            </view>
+
+        </block>
+    </view>
+</view>
